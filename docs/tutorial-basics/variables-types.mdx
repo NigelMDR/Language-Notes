@@ -1,0 +1,85 @@
+---
+sidebar_position: 5
+---
+
+import CodeBlock from '@theme/CodeBlock';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Admonition from '@theme/Admonition';
+
+import basics_cpp from '!!raw-loader!/program-files/variables-types/basics/main.cpp';
+import intermediate_cpp from '!!raw-loader!/program-files/variables-types/intermediate/main.cpp';
+import advanced_cpp from '!!raw-loader!/program-files/variables-types/advanced/main.cpp';
+
+import basics_java from '!!raw-loader!/program-files/variables-types/basics/main.java';
+import intermediate_java from '!!raw-loader!/program-files/variables-types/intermediate/main.java';
+import advanced_java from '!!raw-loader!/program-files/variables-types/advanced/main.java';
+
+import basics_py from '!!raw-loader!/program-files/variables-types/basics/main.py';
+import intermediate_py from '!!raw-loader!/program-files/variables-types/intermediate/main.py';
+import advanced_py from '!!raw-loader!/program-files/variables-types/advanced/main.py';
+
+import basics_rs from '!!raw-loader!/program-files/variables-types/basics/main.rs';
+import intermediate_rs from '!!raw-loader!/program-files/variables-types/intermediate/main.rs';
+import advanced_rs from '!!raw-loader!/program-files/variables-types/advanced/main.rs';
+
+import basics_rb from '!!raw-loader!/program-files/variables-types/basics/main.rb';
+import intermediate_rb from '!!raw-loader!/program-files/variables-types/intermediate/main.rb';
+import advanced_rb from '!!raw-loader!/program-files/variables-types/advanced/main.rb';
+
+# Variables & Types
+
+**Value key pair: ** <br/>
+**Value:** data set, numeric, word, ect... <br />
+**key:** The unique name <br />
+- This relationship between variable name and data helps us reference are data across different scopes (local/global.) The type of value is just as important as its function is memory allocation. Different types will occupy different amounts of memory. This <br />
+
+**Naming, style and format** : consistency consistency consistency <br/>
+Will come across different derivations their is no right or wrong whats more important is consistency. 
+
+## Cpp
+
+| Format | Description
+|:-------------------------------|:----------------------|
+| ``` <TYPE> <Name> = <Value> ``` | initialize variables |
+| ``` <TYPE> <Name>, <Name>, ...```| Declare variables |
+| ``` <Name> = <Value> ```       | initialize declared |
+
+
+
+<Tabs groupId="Cpp">
+
+<TabItem value="basic" label="Basic">
+
+  > If the size or precision of the type is not a concern, then ***```char```***, ***```int```***, and ***```double```*** are typically selected to represent characters, integers, and floating-point values, respectively. The other types in their respective groups are only used in very particular cases.
+
+  Default types include 
+
+  <CodeBlock language="cpp">{basics_cpp}</CodeBlock>
+</TabItem>
+<TabItem value="intermediate" label="Intermediate">
+
+  
+
+  <CodeBlock language="cpp">{intermediate_cpp}</CodeBlock>
+</TabItem>
+<TabItem value="advanced" label="advanced">
+
+  What you thing of this **upgrade**
+
+  <CodeBlock language="cpp">{advanced_cpp}</CodeBlock>
+</TabItem>
+</Tabs>
+
+
+## Java
+<CodeBlock language="java">{basics_java}</CodeBlock>
+
+## python
+<CodeBlock language="python">{basics_py}</CodeBlock>
+
+## Rust
+<CodeBlock language="rust">{basics_rs}</CodeBlock>
+
+## Ruby
+<CodeBlock language="ruby" >{basics_rb}</CodeBlock>
