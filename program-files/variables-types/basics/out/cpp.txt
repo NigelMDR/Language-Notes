@@ -1,0 +1,12 @@
+Bool: 0
+Char: A
+Short: 32767
+Int: 2147483647
+Long: 134217727
+Float: 0.07
+Double: 0.01
+Auto int: 13
+Auto float: 13
+Auto double: 13
+Char: GNU
+Date: 2019/3/23

@@ -1,0 +1,53 @@
+Bool: true
+Char: A
+Short: 32767
+Int: 2147483647
+Long: 134217727
+Float: 0.07
+Double: 0.01
+Var int: 13
+Var float: 13.0
+Var double: 13.0
+Char: GNU
+Date: 2019/3/23
+
+
+<Tabs groupId="Ruby">
+
+<TabItem value="basic" label="Basic">
+
+  <CodeBlock language="ruby" theme="light" >{basics_ruby} </CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <div>
+      <CodeBlock language="txt">{basics_ruby_out}</CodeBlock>
+    </div>
+  </details>
+
+</TabItem>
+<TabItem value="intermediate" label="Intermediate">
+
+  <CodeBlock language="ruby">{intermediate_ruby}</CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <div>
+      <CodeBlock language="txt">{intermediate_ruby_out}</CodeBlock>
+    </div>
+  </details>
+
+</TabItem>
+<TabItem value="advanced" label="advanced">
+
+  <CodeBlock language="ruby">{advanced_ruby}</CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <div>
+      <CodeBlock language="txt">{advanced_ruby_out}</CodeBlock>
+    </div>
+  </details>
+
+</TabItem>
+</Tabs>

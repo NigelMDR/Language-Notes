@@ -32,7 +32,7 @@ int main()
     std::cout << "Long: " << lval << '\n';
     std::cout << "Float: " << fval << '\n';
     std::cout << "Double: " << dval << '\n';
-    std::cout << "Auto int" << some_int << '\n';
+    std::cout << "Auto int: " << some_int << '\n';
     std::cout << "Auto float: " << some_float << '\n';
     std::cout << "Auto double: " << some_double << '\n';
     std::cout << "Char: " << name_0 << name_1 << name_2 << '\n';
