@@ -1,0 +1,10 @@
+Int elements: 5
+Int elements: 7
+Front: 1
+Back: 7
+Vector: 1 2 3 4 5 6 7 
+Int elements: 3
+Int elements: 5
+Front: one
+Back: five
+Vector: one two three four five 

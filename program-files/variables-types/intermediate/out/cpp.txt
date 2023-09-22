@@ -1,0 +1,9 @@
+Int: 12
+Octal 10
+Hexadecimal: 42
+Octal: 256
+Unsigned: 128
+Float: -57
+Scientific notation: 199
+Float: 8.00275
+Long double: 3.14e+38

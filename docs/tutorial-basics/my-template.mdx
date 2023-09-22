@@ -1,0 +1,261 @@
+---
+sidebar_position: 5
+---
+
+import CodeBlock from '@theme/CodeBlock';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import Admonition from '@theme/Admonition';
+
+import basics_cpp from '!!raw-loader!/program-files/z-template/basics/main.cpp';
+import intermediate_cpp from '!!raw-loader!/program-files/z-template/intermediate/main.cpp';
+import advanced_cpp from '!!raw-loader!/program-files/z-template/advanced/main.cpp';
+
+import basics_cpp_out from '!!raw-loader!/program-files/z-template/basics/out/cpp.txt';
+import intermediate_cpp_out from '!!raw-loader!/program-files/z-template/intermediate/out/cpp.txt';
+import advanced_cpp_out from '!!raw-loader!/program-files/z-template/advanced/out/cpp.txt';
+
+import basics_java from '!!raw-loader!/program-files/z-template/basics/main.java';
+import intermediate_java from '!!raw-loader!/program-files/z-template/intermediate/main.java';
+import advanced_java from '!!raw-loader!/program-files/z-template/advanced/main.java';
+
+import basics_java_out from '!!raw-loader!/program-files/z-template/basics/out/java.txt';
+import intermediate_java_out from '!!raw-loader!/program-files/z-template/intermediate/out/java.txt';
+import advanced_java_out from '!!raw-loader!/program-files/z-template/advanced/out/java.txt';
+
+import basics_python from '!!raw-loader!/program-files/z-template/basics/main.py';
+import intermediate_python from '!!raw-loader!/program-files/z-template/intermediate/main.py';
+import advanced_python from '!!raw-loader!/program-files/z-template/advanced/main.py';
+
+import basics_python_out from '!!raw-loader!/program-files/z-template/basics/out/python.txt';
+import intermediate_python_out from '!!raw-loader!/program-files/z-template/intermediate/out/python.txt';
+import advanced_python_out from '!!raw-loader!/program-files/z-template/advanced/out/python.txt';
+
+import basics_rust from '!!raw-loader!/program-files/z-template/basics/main.rs';
+import intermediate_rust from '!!raw-loader!/program-files/z-template/intermediate/main.rs';
+import advanced_rust from '!!raw-loader!/program-files/z-template/advanced/main.rs';
+
+import basics_rust_out from '!!raw-loader!/program-files/z-template/basics/out/rust.txt';
+import intermediate_rust_out from '!!raw-loader!/program-files/z-template/intermediate/out/rust.txt';
+import advanced_rust_out from '!!raw-loader!/program-files/z-template/advanced/out/rust.txt';
+
+import basics_ruby from '!!raw-loader!/program-files/z-template/basics/main.rb';
+import intermediate_ruby from '!!raw-loader!/program-files/z-template/intermediate/main.rb';
+import advanced_ruby from '!!raw-loader!/program-files/z-template/advanced/main.rb';
+
+import basics_ruby_out from '!!raw-loader!/program-files/z-template/basics/out/ruby.txt';
+import intermediate_ruby_out from '!!raw-loader!/program-files/z-template/intermediate/out/ruby.txt';
+import advanced_ruby_out from '!!raw-loader!/program-files/z-template/advanced/out/ruby.txt';
+
+
+# My Template
+
+
+## Cpp
+
+
+<Tabs groupId="Cpp">
+
+<TabItem value="basic" label="Basic">
+
+  <CodeBlock language="cpp">{basics_cpp}</CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <CodeBlock language="txt">{basics_cpp_out}</CodeBlock>
+  </details>
+
+</TabItem>
+<TabItem value="intermediate" label="Intermediate">
+
+  <CodeBlock language="cpp">{intermediate_cpp}</CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <div>
+      <CodeBlock language="txt">{intermediate_cpp_out}</CodeBlock>
+    </div>
+  </details>
+
+</TabItem>
+<TabItem value="advanced" label="advanced">
+
+  <CodeBlock language="cpp">{advanced_cpp}</CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <div>
+      <CodeBlock language="txt">{advanced_cpp_out}</CodeBlock>
+    </div>
+  </details>
+
+</TabItem>
+</Tabs>
+
+
+## Java
+
+
+<Tabs groupId="Java">
+
+<TabItem value="basic" label="Basic">
+
+  <CodeBlock language="java" theme="light" >{basics_java} </CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <div>
+      <CodeBlock language="txt">{basics_java_out}</CodeBlock>
+    </div>
+  </details>
+
+</TabItem>
+<TabItem value="intermediate" label="Intermediate">
+
+  <CodeBlock language="java">{intermediate_java}</CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <div>
+      <CodeBlock language="txt">{intermediate_java_out}</CodeBlock>
+    </div>
+  </details>
+
+</TabItem>
+<TabItem value="advanced" label="advanced">
+
+  <CodeBlock language="java">{advanced_java}</CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <div>
+      <CodeBlock language="txt">{advanced_java_out}</CodeBlock>
+    </div>
+  </details>
+
+</TabItem>
+</Tabs>
+
+
+## python
+<Tabs groupId="Python">
+
+<TabItem value="basic" label="Basic">
+
+  <CodeBlock language="python" theme="light" >{basics_python} </CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <div>
+      <CodeBlock language="txt">{basics_python_out}</CodeBlock>
+    </div>
+  </details>
+
+</TabItem>
+<TabItem value="intermediate" label="Intermediate">
+
+  <CodeBlock language="python">{intermediate_python}</CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <div>
+      <CodeBlock language="txt">{intermediate_python_out}</CodeBlock>
+    </div>
+  </details>
+
+</TabItem>
+<TabItem value="advanced" label="advanced">
+
+  <CodeBlock language="python">{advanced_python}</CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <div>
+      <CodeBlock language="txt">{advanced_python_out}</CodeBlock>
+    </div>
+  </details>
+
+</TabItem>
+</Tabs>
+
+## Rust
+<Tabs groupId="Rust">
+
+<TabItem value="basic" label="Basic">
+
+  <CodeBlock language="rust" theme="light" >{basics_rust} </CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <div>
+      <CodeBlock language="txt">{basics_rust_out}</CodeBlock>
+    </div>
+  </details>
+
+</TabItem>
+<TabItem value="intermediate" label="Intermediate">
+
+  <CodeBlock language="rust">{intermediate_rust}</CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <div>
+      <CodeBlock language="txt">{intermediate_rust_out}</CodeBlock>
+    </div>
+  </details>
+
+</TabItem>
+<TabItem value="advanced" label="advanced">
+
+  <CodeBlock language="rust">{advanced_rust}</CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <div>
+      <CodeBlock language="txt">{advanced_rust_out}</CodeBlock>
+    </div>
+  </details>
+
+</TabItem>
+</Tabs>
+
+## Ruby
+<Tabs groupId="Ruby">
+
+<TabItem value="basic" label="Basic">
+
+  <CodeBlock language="ruby" theme="light" >{basics_ruby} </CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <div>
+      <CodeBlock language="txt">{basics_ruby_out}</CodeBlock>
+    </div>
+  </details>
+
+</TabItem>
+<TabItem value="intermediate" label="Intermediate">
+
+  <CodeBlock language="ruby">{intermediate_ruby}</CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <div>
+      <CodeBlock language="txt">{intermediate_ruby_out}</CodeBlock>
+    </div>
+  </details>
+
+</TabItem>
+<TabItem value="advanced" label="advanced">
+
+  <CodeBlock language="ruby">{advanced_ruby}</CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <div>
+      <CodeBlock language="txt">{advanced_ruby_out}</CodeBlock>
+    </div>
+  </details>
+
+</TabItem>
+</Tabs>

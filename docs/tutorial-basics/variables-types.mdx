@@ -11,21 +11,42 @@ import basics_cpp from '!!raw-loader!/program-files/variables-types/basics/main.
 import intermediate_cpp from '!!raw-loader!/program-files/variables-types/intermediate/main.cpp';
 import advanced_cpp from '!!raw-loader!/program-files/variables-types/advanced/main.cpp';
 
+import basics_cpp_out from '!!raw-loader!/program-files/variables-types/basics/out/cpp.txt';
+import intermediate_cpp_out from '!!raw-loader!/program-files/variables-types/intermediate/out/cpp.txt';
+import advanced_cpp_out from '!!raw-loader!/program-files/variables-types/advanced/out/cpp.txt';
+
 import basics_java from '!!raw-loader!/program-files/variables-types/basics/main.java';
 import intermediate_java from '!!raw-loader!/program-files/variables-types/intermediate/main.java';
 import advanced_java from '!!raw-loader!/program-files/variables-types/advanced/main.java';
 
-import basics_py from '!!raw-loader!/program-files/variables-types/basics/main.py';
-import intermediate_py from '!!raw-loader!/program-files/variables-types/intermediate/main.py';
-import advanced_py from '!!raw-loader!/program-files/variables-types/advanced/main.py';
+import basics_java_out from '!!raw-loader!/program-files/variables-types/basics/out/java.txt';
+import intermediate_java_out from '!!raw-loader!/program-files/variables-types/intermediate/out/java.txt';
+import advanced_java_out from '!!raw-loader!/program-files/variables-types/advanced/out/java.txt';
 
-import basics_rs from '!!raw-loader!/program-files/variables-types/basics/main.rs';
-import intermediate_rs from '!!raw-loader!/program-files/variables-types/intermediate/main.rs';
-import advanced_rs from '!!raw-loader!/program-files/variables-types/advanced/main.rs';
+import basics_python from '!!raw-loader!/program-files/variables-types/basics/main.py';
+import intermediate_python from '!!raw-loader!/program-files/variables-types/intermediate/main.py';
+import advanced_python from '!!raw-loader!/program-files/variables-types/advanced/main.py';
 
-import basics_rb from '!!raw-loader!/program-files/variables-types/basics/main.rb';
-import intermediate_rb from '!!raw-loader!/program-files/variables-types/intermediate/main.rb';
-import advanced_rb from '!!raw-loader!/program-files/variables-types/advanced/main.rb';
+import basics_python_out from '!!raw-loader!/program-files/variables-types/basics/out/python.txt';
+import intermediate_python_out from '!!raw-loader!/program-files/variables-types/intermediate/out/python.txt';
+import advanced_python_out from '!!raw-loader!/program-files/variables-types/advanced/out/python.txt';
+
+import basics_rust from '!!raw-loader!/program-files/variables-types/basics/main.rs';
+import intermediate_rust from '!!raw-loader!/program-files/variables-types/intermediate/main.rs';
+import advanced_rust from '!!raw-loader!/program-files/variables-types/advanced/main.rs';
+
+import basics_rust_out from '!!raw-loader!/program-files/variables-types/basics/out/rust.txt';
+import intermediate_rust_out from '!!raw-loader!/program-files/variables-types/intermediate/out/rust.txt';
+import advanced_rust_out from '!!raw-loader!/program-files/variables-types/advanced/out/rust.txt';
+
+import basics_ruby from '!!raw-loader!/program-files/variables-types/basics/main.rb';
+import intermediate_ruby from '!!raw-loader!/program-files/variables-types/intermediate/main.rb';
+import advanced_ruby from '!!raw-loader!/program-files/variables-types/advanced/main.rb';
+
+import basics_ruby_out from '!!raw-loader!/program-files/variables-types/basics/out/ruby.txt';
+import intermediate_ruby_out from '!!raw-loader!/program-files/variables-types/intermediate/out/ruby.txt';
+import advanced_ruby_out from '!!raw-loader!/program-files/variables-types/advanced/out/ruby.txt';
+
 
 # Variables & Types
 
@@ -39,47 +60,230 @@ Will come across different derivations their is no right or wrong whats more imp
 
 ## Cpp
 
-| Format | Description
+Use ```./main > test.txt 2>&1 ``` to capture both stdout and stderr.
+
+| Format | Description |
 |:-------------------------------|:----------------------|
 | ``` <TYPE> <Name> = <Value> ``` | initialize variables |
 | ``` <TYPE> <Name>, <Name>, ...```| Declare variables |
-| ``` <Name> = <Value> ```       | initialize declared |
-
-
+| ``` <Name> = <Value> ```       | initialize declared variables |
 
 <Tabs groupId="Cpp">
 
 <TabItem value="basic" label="Basic">
 
+  Size is relative as its left to the compiler but it does guarantee at leasts ```n-bytes``` for each data type. More on this later ...
   > If the size or precision of the type is not a concern, then ***```char```***, ***```int```***, and ***```double```*** are typically selected to represent characters, integers, and floating-point values, respectively. The other types in their respective groups are only used in very particular cases.
 
   Default types include 
 
   <CodeBlock language="cpp">{basics_cpp}</CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <CodeBlock language="txt">{basics_cpp_out}</CodeBlock>
+  </details>
+
 </TabItem>
 <TabItem value="intermediate" label="Intermediate">
 
-  
+  Integers and Floating-Point Literals. <br/>
+  When using literals the compiler will assign a type appropriate for the literal.
 
   <CodeBlock language="cpp">{intermediate_cpp}</CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <div>
+      <CodeBlock language="txt">{intermediate_cpp_out}</CodeBlock>
+    </div>
+  </details>
+
 </TabItem>
 <TabItem value="advanced" label="advanced">
 
-  What you thing of this **upgrade**
+  1D and 2D vectors type dependent ```emuns``` allow for more flexibility of the types.
 
   <CodeBlock language="cpp">{advanced_cpp}</CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <div>
+      <CodeBlock language="txt">{advanced_cpp_out}</CodeBlock>
+    </div>
+  </details>
+
 </TabItem>
 </Tabs>
 
 
 ## Java
-<CodeBlock language="java">{basics_java}</CodeBlock>
+
+``` txt
+java main.java > out/java.txt 2>&1
+```
+
+<Tabs groupId="Java">
+
+<TabItem value="basic" label="Basic">
+
+  Java has default type initialization 
+
+  <CodeBlock language="java" theme="light" >{basics_java} </CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <div>
+      <CodeBlock language="txt">{basics_java_out}</CodeBlock>
+    </div>
+  </details>
+
+</TabItem>
+<TabItem value="intermediate" label="Intermediate">
+
+  <CodeBlock language="java">{intermediate_java}</CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <div>
+      <CodeBlock language="txt">{intermediate_java_out}</CodeBlock>
+    </div>
+  </details>
+
+</TabItem>
+<TabItem value="advanced" label="advanced">
+
+  <CodeBlock language="java">{advanced_java}</CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <div>
+      <CodeBlock language="txt">{advanced_java_out}</CodeBlock>
+    </div>
+  </details>
+
+</TabItem>
+</Tabs>
 
 ## python
-<CodeBlock language="python">{basics_py}</CodeBlock>
+<Tabs groupId="Python">
+
+<TabItem value="basic" label="Basic">
+
+  <CodeBlock language="python" theme="light" >{basics_python} </CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <div>
+      <CodeBlock language="txt">{basics_python_out}</CodeBlock>
+    </div>
+  </details>
+
+</TabItem>
+<TabItem value="intermediate" label="Intermediate">
+
+  <CodeBlock language="python">{intermediate_python}</CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <div>
+      <CodeBlock language="txt">{intermediate_python_out}</CodeBlock>
+    </div>
+  </details>
+
+</TabItem>
+<TabItem value="advanced" label="advanced">
+
+  <CodeBlock language="python">{advanced_python}</CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <div>
+      <CodeBlock language="txt">{advanced_python_out}</CodeBlock>
+    </div>
+  </details>
+
+</TabItem>
+</Tabs>
 
 ## Rust
-<CodeBlock language="rust">{basics_rs}</CodeBlock>
+<Tabs groupId="Rust">
+
+<TabItem value="basic" label="Basic">
+
+  <CodeBlock language="rust" theme="light" >{basics_rust} </CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <div>
+      <CodeBlock language="txt">{basics_rust_out}</CodeBlock>
+    </div>
+  </details>
+
+</TabItem>
+<TabItem value="intermediate" label="Intermediate">
+
+  <CodeBlock language="rust">{intermediate_rust}</CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <div>
+      <CodeBlock language="txt">{intermediate_rust_out}</CodeBlock>
+    </div>
+  </details>
+
+</TabItem>
+<TabItem value="advanced" label="advanced">
+
+  <CodeBlock language="rust">{advanced_rust}</CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <div>
+      <CodeBlock language="txt">{advanced_rust_out}</CodeBlock>
+    </div>
+  </details>
+
+</TabItem>
+</Tabs>
 
 ## Ruby
-<CodeBlock language="ruby" >{basics_rb}</CodeBlock>
+<Tabs groupId="Ruby">
+
+<TabItem value="basic" label="Basic">
+
+  <CodeBlock language="ruby" theme="light" >{basics_ruby} </CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <div>
+      <CodeBlock language="txt">{basics_ruby_out}</CodeBlock>
+    </div>
+  </details>
+
+</TabItem>
+<TabItem value="intermediate" label="Intermediate">
+
+  <CodeBlock language="ruby">{intermediate_ruby}</CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <div>
+      <CodeBlock language="txt">{intermediate_ruby_out}</CodeBlock>
+    </div>
+  </details>
+
+</TabItem>
+<TabItem value="advanced" label="advanced">
+
+  <CodeBlock language="ruby">{advanced_ruby}</CodeBlock>
+
+  <details>
+    <summary>Toggle Output!</summary>
+    <div>
+      <CodeBlock language="txt">{advanced_ruby_out}</CodeBlock>
+    </div>
+  </details>
+
+</TabItem>
+</Tabs>

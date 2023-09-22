@@ -18,7 +18,7 @@ int main(int argc, char const *argv[])
     std::cout << "Octal " << oval << '\n';
     std::cout << "Hexadecimal: " << hval << '\n';
     std::cout << "Octal: " << lval << '\n';
-    std::cout << "Hexidecimal: " << uval << '\n';
+    std::cout << "Unsigned: " << uval << '\n';
     std::cout << "Float: " << fval << '\n';
     std::cout << "Scientific notation: " << snval << '\n';
     std::cout << "Float: " << ffval << '\n';
